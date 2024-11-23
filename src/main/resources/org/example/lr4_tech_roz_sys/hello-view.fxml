@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="650.0" prefWidth="800.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.lr4_tech_roz_sys.HelloController">
+    <children>
+        <AnchorPane prefHeight="653.0" prefWidth="1000.0">
+            <children>
+                <TableView fx:id="TrainTable" layoutX="13.0" layoutY="54.0" prefHeight="408.0" prefWidth="320.0">
+                    <columns>
+                        <TableColumn fx:id="IDTrainCol" prefWidth="75.0" text="ID Потяга" />
+                        <TableColumn fx:id="NameTrainCol" prefWidth="123.19998168945312" text="Назва маршруту" />
+                        <TableColumn fx:id="TypeTrainCol" prefWidth="87.59999084472656" text="Тип потяга" />
+                    </columns>
+                </TableView>
+                <Label layoutX="315.0" layoutY="14.0" text="Редагування Потягів" textFill="#2d35c1">
+                    <font>
+                        <Font name="Century Gothic" size="20.0" />
+                    </font>
+                </Label>
+                <Button fx:id="AddTrainButton" layoutX="368.0" layoutY="352.0" mnemonicParsing="false" onAction="#AddTrainAction" text="Добавити" />
+                <Button fx:id="DeleteTrainButton" layoutX="369.0" layoutY="397.0" mnemonicParsing="false" onAction="#DeleteButtonAction" text="Видалити" />
+                <Button fx:id="UpdateTrainButton" layoutX="475.0" layoutY="352.0" mnemonicParsing="false" onAction="#UpdateButtonAction" text="Відновити список" />
+                <Button fx:id="LookTrainButton" layoutX="475.0" layoutY="397.0" mnemonicParsing="false" onAction="#ShowButtonAction" text="Показати " />
+                <Label layoutX="382.0" layoutY="153.0" text="Назва маршруту(Varchar)" />
+                <Label layoutX="382.0" layoutY="73.0" text="Номер потяга (INT)" />
+                <Label layoutX="382.0" layoutY="226.0" text="Тип потяга (Varchar)" />
+                <TextField fx:id="IDTrain" layoutX="382.0" layoutY="99.0" />
+                <TextField fx:id="NameTrain" layoutX="382.0" layoutY="178.0" />
+                <TextField fx:id="TypeTrain" layoutX="382.0" layoutY="254.0" />
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>
